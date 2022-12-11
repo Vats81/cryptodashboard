@@ -20,10 +20,10 @@ st.header('**Selected Price**')
 
 
 # Verbose version
-my_db.connect(username=st.secrets.db_credentials.username, password=st.secrets.db_credentials.password)
+#my_db.connect(username=st.secrets.db_credentials.username, password=st.secrets.db_credentials.password)
 
 # Far more compact version!
-my_db.connect(**st.secrets.db_credentials)
+#my_db.connect(**st.secrets.db_credentials)
 
 # Load market data from Binance API
 df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
