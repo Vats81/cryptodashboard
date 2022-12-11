@@ -4,12 +4,7 @@ import pandas as pd
 import os
 
 
-st.write("DB username:", st.secrets["db_username"])
-st.write("DB password:", st.secrets["db_password"])
-st.write(
-    "Has environment variables been set:",
-    os.environ["db_username"] == st.secrets["db_username"],
-)
+
 
 st.markdown('''# **Binance Price App**
 A simple cryptocurrency price app pulling price data from *Binance API*.
@@ -19,11 +14,7 @@ st.header('**Selected Price**')
 
 
 
-# Verbose version
-#my_db.connect(username=st.secrets.db_credentials.username, password=st.secrets.db_credentials.password)
 
-# Far more compact version!
-#my_db.connect(**st.secrets.db_credentials)
 
 # Load market data from Binance API
 df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
