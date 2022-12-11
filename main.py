@@ -17,9 +17,7 @@ A simple cryptocurrency price app pulling price data from *Binance API*.
 realans = ['', 'abc', 'edf']
 st.header('**Selected Price**')
 
-[db_credentials]
-username = "my_username"
-password = "my_password"
+
 
 # Verbose version
 my_db.connect(username=st.secrets.db_credentials.username, password=st.secrets.db_credentials.password)
